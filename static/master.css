@@ -1,0 +1,55 @@
+.heading{
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+}
+#main-footer{
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: -20px;
+      padding: 32px;
+      bottom: 8px;
+}
+.name{
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+}
+.Batting{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 30px;
+}
+.Bowling{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 30px;
+}
+.venue{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 30px;
+}
+.Runs{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 30px;
+}
+.Wickets{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 30px;
+}
+.mySlides{
+  display:none;
+}
+.gallery{
+  margin-top: 10px
+}
+.Prev Runs{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 30px;
+}
+.Prev Wickets{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 30px;
+}
+.Overs{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 30px;
+}

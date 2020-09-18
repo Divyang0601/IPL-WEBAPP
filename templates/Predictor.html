@@ -1,0 +1,27 @@
+
+
+{% extends "common.html" %}
+
+
+{% block content %}
+
+<div class="jumbotron">
+<h1 class="display-4">Welcome to the Real-time IPL Score Predictor WebApp</h1>
+<p class="lead">This is a web application that can be used to predict the first inning score of an IPL match, This application utilises the complete IPL match records (till 2020) and uses ML Ridge Regression algorithm to predict the score</p>
+<hr class="my-4">
+Technology and Framework used -<br>
+<span id = "more">
+<ul>
+  <li>ML Ridge Regression Algorithm to predict the estimated score</li>
+  <li>Python libraries like numpy, pandas and seaborn for analysis of the dataset</li>
+  <li>Python's Flask Framework</li>
+  <li>HTML, CSS, Bootstrap and Jquery to design interactive website</li>
+  <li>SQL Database linked with Flask to collect feedback from viewers</li>
+  <li>Heroku Web Hosting service to deploy the Web Application</li>
+</ul>
+<b>Visit the predict page to use the model and feel free to play around, Your feedback/suggestion in the forum would be highly appreciated</b><br>
+<b>Interested in contributing something for this project? Feel free to contact me through my Linkedin profile (Link is provided below)</b>
+</span>
+</div>
+<br>
+{% endblock %}

@@ -1,0 +1,81 @@
+
+{% extends "common.html" %}
+
+{% block content %}
+
+    <form action = "{{ url_for('result_page')}}" method="POST">
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+      <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="Team1"><span class = "Batting">Select Batting Team :</span></label>
+       <select class="custom-select" name="batting team" id = "Team1">
+         <option value="none">Select a Batting team</option>
+         <option value="Chennai Super Kings">Chennai Super Kings</option>
+         <option value="Mumbai Indians">Mumbai Indians</option>
+         <option value="Kings XI Punjab">Kings XI Punjab</option>
+         <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+         <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+         <option value="Rajasthan Royals">Rajasthan Royals</option>
+         <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+         <option value="Delhi Daredevils">Delhi Daredevils</option>
+       </select>
+     </div>
+     <div class="form-group col-md-6">
+       <label for="Team1"><span class = "Bowling">Select Bowling Team :</span></label>
+      <select class="custom-select" name = "bowling team" id = "Team1">
+        <option value="none">Select a Bowling team</option>
+        <option value="Chennai Super Kings">Chennai Super Kings</option>
+        <option value="Mumbai Indians">Mumbai Indians</option>
+        <option value="Kings XI Punjab">Kings XI Punjab</option>
+        <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+        <option value="Rajasthan Royals">Rajasthan Royals</option>
+        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+        <option value="Delhi Daredevils">Delhi Daredevils</option>
+      </select>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="Venue"><span class = "Batting">Stadium/Venue:</span></label>
+     <select class="custom-select" name="Venue" id = "Venue">
+       <option value="none">Select match venue</option>
+       <option value="venue_Eden Gardens">Eden Gardens, Kolkata</option>
+       <option value="venue_Feroz Shah Kotla">Firoj Shah Kotla Stadium, Delhi</option>
+       <option value="venue_M Chinnaswamy Stadium">M Chinnaswamy Stadium, Bengaluru</option>
+       <option value="venue_MA Chidambaram Stadium, Chepauk">MA Chidambaram Stadium, Chepauk</option>
+       <option value="venue_Punjab Cricket Association Stadium, Mohali">PCA Stadium, Mohali</option>
+       <option value="venue_Rajiv Gandhi International Stadium, Uppal">Rajiv Gandhi International Stadium, Hyderabad</option>
+       <option value="venue_Sawai Mansingh Stadium">Sawai Mansingh Stadium, Jaipur</option>
+       <option value="venue_Wankhede Stadium">Wankhade Stadium, Mumbai</option>
+     </select>
+   </div>
+   <div class="col-md-6 mb-3">
+     <label for="inputZip"><span class="Runs">Runs scored:</span></label>
+     <input type="text"maxlength="3" name = "runs"class="form-control" placeholder="Runs scored so far"id="inputZip">
+   </div>
+   <div class="col-md-6 mb-3">
+     <label for="inputZip1"><span class="Wickets">Wickets:</span></label>
+     <input type="text"name = "wickets" maxlength="2" class="form-control" placeholder="Wickets fallen"id="inputZip1">
+   </div>
+   <div class="col-md-6 mb-3">
+     <label for="inputZip4"><span class="Overs">Overs(Min:5)</span></label>
+     <input type="text"name = "overs" maxlength="4" class="form-control" placeholder="Enter float value(eg: 7.2)"id="inputZip4">
+   </div>
+   <div class="col-md-6 mb-3">
+   <label for="inputZip2"><span class="Prev Runs">Previous Runs:</span></label>
+   <input type="text"name = "prev runs" maxlength="3" class="form-control" placeholder="Runs scored in prev 5 overs"id="inputZip2">
+   </div>
+   <div class="col-md-6 mb-3">
+     <label for="inputZip3"><span class="Prev Wickets">Previous Wickets:</span></label>
+     <input type="text"name = "prev wickets" maxlength="1" class="form-control" placeholder="Wickets fallen in prev 5 overs"id="inputZip3">
+   </div>
+ </div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Predict Score</button>
+    <button type="reset" class="btn btn-secondary btn-lg btn-block"onclick="">Reset form</button>
+   </div>
+   </div>
+</form>
+
+
+{% endblock %}

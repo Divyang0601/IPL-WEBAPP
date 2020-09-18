@@ -1,0 +1,29 @@
+
+{% extends "common.html" %}
+
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <form action = "{{url_for('thank_you')}}">
+    <h4 class="display-6">How would you rate this project in the scale of 0 - 10</h4>
+    <div class="form-group col-md-2">
+      <input type="text" name="stars" class="form-control is-invalid"maxlength="2" id="validationServer05" required>
+     <div class="invalid-feedback">
+       Please provide a valid rating.
+     </div>
+    </div>
+    <div class="mb-3">
+    <label for="validationTextarea">Any additional suggestions/feedback/comment</label>
+    <textarea class="form-control is-invalid" name = "review" id="validationTextarea" placeholder="Enter your feedback" required></textarea>
+    <div class="invalid-feedback">
+      Please enter your feedback
+    </div>
+  </div>
+   <button class="btn btn-primary" type="submit">Submit Review</button>
+  </div>
+</form>
+</div>
+
+<br><br><br><br>
+{% endblock %}
